@@ -57,7 +57,7 @@ tags = ['教育方法论', '几何', '初中', '数学', '数学史']
 
 别克霍夫能用这么少公设就完成任务，是因为他充分利用了实数作为全序完备数域的性质，省去了定义长度、角度、距离、全等、大于、小于等概念。而希尔伯特的系统则是远离具体的实数乃至数字的。
 
-这可让美国的高中数学教材编者开心了。这么“轻松又简单”的公理系统，不给中学生用岂不是浪费？于是，从别克霍夫自己写的一套数学教材开始，大量美国高中数学教材都开始用别克霍夫的体系或者其变种。1960年代，美国数学教研组（School Mathematics Study Group，SMSG，美国国家科学基金会资助的一个教育委员会）在别克霍夫的基础上搞了个更好懂的公理系统，一样只有四条公设。
+这可让美国的高中数学教材编者开心了。这么“轻松又简单”的公理系统，不给中学生用岂不是浪费？于是，从别克霍夫自己写的一套数学教材开始，大量美国高中数学教材都开始用别克霍夫的体系或者其变种。1960年代，美国数学教研组（School Mathematics Study Group，SMSG，美国国家科学基金会资助的一个教育委员会）在别克霍夫的基础上搞了个更好懂的公理系统[^4]，
 这个叫做SMSG系统的平面几何公理系统，就是今天大多数中学课本里平面几何证明的起点[^1]。
 
 读者看到这里，大概要拍手叫好：“好！就这么办吧！”
@@ -70,4 +70,4 @@ tags = ['教育方法论', '几何', '初中', '数学', '数学史']
 
 [^3]:[Birkhoff's Axioms for Euclidean Geometry](https://www.ms.uky.edu/~droyster/courses/fall11/ma341/axioms/Birkhoff.htm)
 
-<!-- [SMSG Axioms for Euclidean Geometry](https://www.math.stonybrook.edu/~scott/mat515.fall14/smsg.pdf) -->
+[^4]:[SMSG Axioms for Euclidean Geometry](https://www.math.stonybrook.edu/~scott/mat515.fall14/smsg.pdf)
