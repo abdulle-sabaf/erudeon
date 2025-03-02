@@ -62,7 +62,7 @@ tags = ['教育方法论', '几何', '初中', '数学', '数学史']
 
 读者看到这里，大概要拍手叫好：“好！就这么办吧！”
 
-这么办自然没有什么问题，不过，我还是有一些个人的想法。欲闻其详，且见下回分解。
+这么办自然没有什么问题，不过，我还是有一些个人的想法。欲闻其详，且听下回分解。
 
 [^1]:Axiomatic Geometry, John M. Lee, Chap. 1, [Euclid](https://sites.math.washington.edu/~lee/Books/AG/amstext-21-prev.pdf).
 
