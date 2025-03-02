@@ -2,6 +2,7 @@
 date = '2022-10-14T01:00:30+08:00'
 title = '写在最初'
 draft = false
+aliases = ["/maths/my-second-post/"]
 +++
 
 首先记录一下这个项目的缘由。
