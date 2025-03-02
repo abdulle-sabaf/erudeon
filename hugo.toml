@@ -1,0 +1,8 @@
+baseURL = 'https://example.org/'
+languageCode = 'zh-CN'
+title = '自学新世界'
+theme = 'relearn'
+defaultContentLanguage = 'zh'
+
+[params]
+  themeVariant = 'tima-dark'
