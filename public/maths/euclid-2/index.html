@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 7.4.1+521de1e32e5e1028825729e00e85cc56e078c02a">
+    <meta name="description" content="很多人提到几何，特别是古典的平面几何，就会想到《几何原本》。根据西方古典历史，古希腊人欧几里得在公元前300年左右编纂了《几何原本》，而一般认为，《几何原本》总结了古代埃及和希腊的散落的数学知识，从少数几个公设和公理出发，用逻辑推演出大量有意义的结果，是演绎推理体系的集大成之作。
+《几何原本》全书一共13卷，包含465个命题。第一卷开头给出了23个几何对象和关系的定义1。比如：
+点是没有部分的东西。 线只有长度而没有宽度。 一线的两端是点。 等等。所有的定义内容可参见这篇文章。
+给出了定义之后，《几何原本》又给出了五条公设和五个公理。它们被认为是不证自明的道理2。
+五条公设（postulate）：
+从任意一点到任意另一点可以画一条直线。 一条有限直线（线段）可以向两端无限延长。 以任意点为圆心、任意距离为半径可以画一个圆。 所有直角都相等。 平行公设：同一平面内，一条直线与两条直线相交，若同侧内角之和小于两直角，则这两条直线无限延长后会相交于该侧某一点。 五个公理（axiom）：
+等于同量的量彼此相等。 等量加等量，其和相等。 等量减等量，其差相等。 彼此重合的图形，彼此相等。 整体大于部分。 可以看到，公设是具体直观上的设定，而公理是更基本的“道理”。如果说公设是平面几何的基础，那么公理更多是思考的基础。从这一点就可以看出，《几何原本》绝不只是关于“平面几何”这件事。实际上，除了第一卷主要探讨三角形的基本性质，最终证明勾股定理，越到后面，《几何原本》的内容越偏向讨论代数关系。大量的定理是借助几何构型探讨代数关系。比如“著名”的定理2.5，就是借长方形和正方形的面积关系，证明平方和差的恒等式：
+$$ ab &#43; \frac{(a - b)^2}{2} = \frac{(a &#43; b)^2}{2}. $$ 更不用说后面借助圆的内外接正多边形来讨论圆周率和无理数（不可公度量）了。
+因此，《几何原本》的主要目标不是深入讨论几何形状的性质，而是借助几何形状，来讨论代数关系，乃至数本身。这也是为什么中文将其翻译为“几何”（也就是“多少”）。现代中文数学用“几何”来描述形体的性质，反而是弄错了古人“几何”的本意。
+回到初中平面几何的学习。初中的学生直接学习以上的公理化体系，合理吗？不合理。凡是以让学生“读经典”的名义去直接读《几何原本》的，要么是一知半解，要么是不负责任。那么，初中的学生应该怎么学习平面几何，与《几何原本》又有什么联系呢？且听下回分解。
+《几何原本》中文译本：第一卷 ↩︎
+Axiomatic Geometry, John M. Lee, Chap. 1, Euclid. ↩︎">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="平面几何教学探索之二：公理是什么？ :: 自学新世界">
+    <meta name="twitter:description" content="很多人提到几何，特别是古典的平面几何，就会想到《几何原本》。根据西方古典历史，古希腊人欧几里得在公元前300年左右编纂了《几何原本》，而一般认为，《几何原本》总结了古代埃及和希腊的散落的数学知识，从少数几个公设和公理出发，用逻辑推演出大量有意义的结果，是演绎推理体系的集大成之作。
+《几何原本》全书一共13卷，包含465个命题。第一卷开头给出了23个几何对象和关系的定义1。比如：
+点是没有部分的东西。 线只有长度而没有宽度。 一线的两端是点。 等等。所有的定义内容可参见这篇文章。
+给出了定义之后，《几何原本》又给出了五条公设和五个公理。它们被认为是不证自明的道理2。
+五条公设（postulate）：
+从任意一点到任意另一点可以画一条直线。 一条有限直线（线段）可以向两端无限延长。 以任意点为圆心、任意距离为半径可以画一个圆。 所有直角都相等。 平行公设：同一平面内，一条直线与两条直线相交，若同侧内角之和小于两直角，则这两条直线无限延长后会相交于该侧某一点。 五个公理（axiom）：
+等于同量的量彼此相等。 等量加等量，其和相等。 等量减等量，其差相等。 彼此重合的图形，彼此相等。 整体大于部分。 可以看到，公设是具体直观上的设定，而公理是更基本的“道理”。如果说公设是平面几何的基础，那么公理更多是思考的基础。从这一点就可以看出，《几何原本》绝不只是关于“平面几何”这件事。实际上，除了第一卷主要探讨三角形的基本性质，最终证明勾股定理，越到后面，《几何原本》的内容越偏向讨论代数关系。大量的定理是借助几何构型探讨代数关系。比如“著名”的定理2.5，就是借长方形和正方形的面积关系，证明平方和差的恒等式：
+$$ ab &#43; \frac{(a - b)^2}{2} = \frac{(a &#43; b)^2}{2}. $$ 更不用说后面借助圆的内外接正多边形来讨论圆周率和无理数（不可公度量）了。
+因此，《几何原本》的主要目标不是深入讨论几何形状的性质，而是借助几何形状，来讨论代数关系，乃至数本身。这也是为什么中文将其翻译为“几何”（也就是“多少”）。现代中文数学用“几何”来描述形体的性质，反而是弄错了古人“几何”的本意。
+回到初中平面几何的学习。初中的学生直接学习以上的公理化体系，合理吗？不合理。凡是以让学生“读经典”的名义去直接读《几何原本》的，要么是一知半解，要么是不负责任。那么，初中的学生应该怎么学习平面几何，与《几何原本》又有什么联系呢？且听下回分解。
+《几何原本》中文译本：第一卷 ↩︎
+Axiomatic Geometry, John M. Lee, Chap. 1, Euclid. ↩︎">
+    <meta property="og:url" content="http://localhost:1313/maths/euclid-2/index.html">
+    <meta property="og:site_name" content="自学新世界">
+    <meta property="og:title" content="平面几何教学探索之二：公理是什么？ :: 自学新世界">
+    <meta property="og:description" content="很多人提到几何，特别是古典的平面几何，就会想到《几何原本》。根据西方古典历史，古希腊人欧几里得在公元前300年左右编纂了《几何原本》，而一般认为，《几何原本》总结了古代埃及和希腊的散落的数学知识，从少数几个公设和公理出发，用逻辑推演出大量有意义的结果，是演绎推理体系的集大成之作。
+《几何原本》全书一共13卷，包含465个命题。第一卷开头给出了23个几何对象和关系的定义1。比如：
+点是没有部分的东西。 线只有长度而没有宽度。 一线的两端是点。 等等。所有的定义内容可参见这篇文章。
+给出了定义之后，《几何原本》又给出了五条公设和五个公理。它们被认为是不证自明的道理2。
+五条公设（postulate）：
+从任意一点到任意另一点可以画一条直线。 一条有限直线（线段）可以向两端无限延长。 以任意点为圆心、任意距离为半径可以画一个圆。 所有直角都相等。 平行公设：同一平面内，一条直线与两条直线相交，若同侧内角之和小于两直角，则这两条直线无限延长后会相交于该侧某一点。 五个公理（axiom）：
+等于同量的量彼此相等。 等量加等量，其和相等。 等量减等量，其差相等。 彼此重合的图形，彼此相等。 整体大于部分。 可以看到，公设是具体直观上的设定，而公理是更基本的“道理”。如果说公设是平面几何的基础，那么公理更多是思考的基础。从这一点就可以看出，《几何原本》绝不只是关于“平面几何”这件事。实际上，除了第一卷主要探讨三角形的基本性质，最终证明勾股定理，越到后面，《几何原本》的内容越偏向讨论代数关系。大量的定理是借助几何构型探讨代数关系。比如“著名”的定理2.5，就是借长方形和正方形的面积关系，证明平方和差的恒等式：
+$$ ab &#43; \frac{(a - b)^2}{2} = \frac{(a &#43; b)^2}{2}. $$ 更不用说后面借助圆的内外接正多边形来讨论圆周率和无理数（不可公度量）了。
+因此，《几何原本》的主要目标不是深入讨论几何形状的性质，而是借助几何形状，来讨论代数关系，乃至数本身。这也是为什么中文将其翻译为“几何”（也就是“多少”）。现代中文数学用“几何”来描述形体的性质，反而是弄错了古人“几何”的本意。
+回到初中平面几何的学习。初中的学生直接学习以上的公理化体系，合理吗？不合理。凡是以让学生“读经典”的名义去直接读《几何原本》的，要么是一知半解，要么是不负责任。那么，初中的学生应该怎么学习平面几何，与《几何原本》又有什么联系呢？且听下回分解。
+《几何原本》中文译本：第一卷 ↩︎
+Axiomatic Geometry, John M. Lee, Chap. 1, Euclid. ↩︎">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="悟数学">
+    <meta property="article:published_time" content="2023-01-25T16:39:43+08:00">
+    <meta property="article:modified_time" content="2023-01-25T16:39:43+08:00">
+    <meta property="article:tag" content="教育方法论">
+    <meta property="article:tag" content="几何">
+    <meta property="article:tag" content="初中">
+    <meta property="article:tag" content="数学">
+    <meta property="article:tag" content="数学史">
+    <meta itemprop="name" content="平面几何教学探索之二：公理是什么？ :: 自学新世界">
+    <meta itemprop="description" content="很多人提到几何，特别是古典的平面几何，就会想到《几何原本》。根据西方古典历史，古希腊人欧几里得在公元前300年左右编纂了《几何原本》，而一般认为，《几何原本》总结了古代埃及和希腊的散落的数学知识，从少数几个公设和公理出发，用逻辑推演出大量有意义的结果，是演绎推理体系的集大成之作。
+《几何原本》全书一共13卷，包含465个命题。第一卷开头给出了23个几何对象和关系的定义1。比如：
+点是没有部分的东西。 线只有长度而没有宽度。 一线的两端是点。 等等。所有的定义内容可参见这篇文章。
+给出了定义之后，《几何原本》又给出了五条公设和五个公理。它们被认为是不证自明的道理2。
+五条公设（postulate）：
+从任意一点到任意另一点可以画一条直线。 一条有限直线（线段）可以向两端无限延长。 以任意点为圆心、任意距离为半径可以画一个圆。 所有直角都相等。 平行公设：同一平面内，一条直线与两条直线相交，若同侧内角之和小于两直角，则这两条直线无限延长后会相交于该侧某一点。 五个公理（axiom）：
+等于同量的量彼此相等。 等量加等量，其和相等。 等量减等量，其差相等。 彼此重合的图形，彼此相等。 整体大于部分。 可以看到，公设是具体直观上的设定，而公理是更基本的“道理”。如果说公设是平面几何的基础，那么公理更多是思考的基础。从这一点就可以看出，《几何原本》绝不只是关于“平面几何”这件事。实际上，除了第一卷主要探讨三角形的基本性质，最终证明勾股定理，越到后面，《几何原本》的内容越偏向讨论代数关系。大量的定理是借助几何构型探讨代数关系。比如“著名”的定理2.5，就是借长方形和正方形的面积关系，证明平方和差的恒等式：
+$$ ab &#43; \frac{(a - b)^2}{2} = \frac{(a &#43; b)^2}{2}. $$ 更不用说后面借助圆的内外接正多边形来讨论圆周率和无理数（不可公度量）了。
+因此，《几何原本》的主要目标不是深入讨论几何形状的性质，而是借助几何形状，来讨论代数关系，乃至数本身。这也是为什么中文将其翻译为“几何”（也就是“多少”）。现代中文数学用“几何”来描述形体的性质，反而是弄错了古人“几何”的本意。
+回到初中平面几何的学习。初中的学生直接学习以上的公理化体系，合理吗？不合理。凡是以让学生“读经典”的名义去直接读《几何原本》的，要么是一知半解，要么是不负责任。那么，初中的学生应该怎么学习平面几何，与《几何原本》又有什么联系呢？且听下回分解。
+《几何原本》中文译本：第一卷 ↩︎
+Axiomatic Geometry, John M. Lee, Chap. 1, Euclid. ↩︎">
+    <meta itemprop="datePublished" content="2023-01-25T16:39:43+08:00">
+    <meta itemprop="dateModified" content="2023-01-25T16:39:43+08:00">
+    <meta itemprop="wordCount" content="43">
+    <meta itemprop="keywords" content="教育方法论,几何,初中,数学,数学史">
+    <title>平面几何教学探索之二：公理是什么？ :: 自学新世界</title>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1740942890" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1740942890" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1740942890" rel="stylesheet">
+    <link href="/css/theme.css?1740942890" rel="stylesheet">
+    <link href="/css/format-html.css?1740942890" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1740942890" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1740942890" defer></script>
+    <script src="/js/lunr/lunr.min.js?1740942890" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1740942890" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1740942890" defer></script>
+    <script src="/js/lunr/lunr.zh.min.js?1740942890" defer></script>
+    <script src="/js/search.js?1740942890" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.contentLangs=['zh'];
+      window.relearn.index_js_url="/searchindex.zh.js?1740942890";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // variant stuff
+      window.relearn.themevariants = [ 'tima-dark' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        var select = document.querySelector("#R-select-variant");
+        if (select) {
+          select.value = variant;
+        }
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `复制到剪贴板`;
+      window.T_Copied_to_clipboard = `复制到剪贴板！`;
+      window.T_Copy_link_to_clipboard = `将链接复制到剪贴板`;
+      window.T_Link_copied_to_clipboard = `链接复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/maths/euclid-2/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">从零开始学习这个世界</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/maths/index.html"><span itemprop="name">悟数学</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">平面几何教学探索之二：公理是什么？</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/maths/algebra-1/index.html" title="代数和运算法则 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/maths/euclid-1/index.html" title="平面几何教学探索之一：到底要学什么？ (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable maths" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/%E5%88%9D%E4%B8%AD/index.html">初中</a></li>
+    <li><a class="term-link" href="/tags/%E5%87%A0%E4%BD%95/index.html">几何</a></li>
+    <li><a class="term-link" href="/tags/%E6%95%99%E8%82%B2%E6%96%B9%E6%B3%95%E8%AE%BA/index.html">教育方法论</a></li>
+    <li><a class="term-link" href="/tags/%E6%95%B0%E5%AD%A6/index.html">数学</a></li>
+    <li><a class="term-link" href="/tags/%E6%95%B0%E5%AD%A6%E5%8F%B2/index.html">数学史</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="平面几何教学探索之二公理是什么">平面几何教学探索之二：公理是什么？</h1>
+
+<p>很多人提到几何，特别是古典的平面几何，就会想到《几何原本》。根据西方古典历史，古希腊人欧几里得在公元前300年左右编纂了《几何原本》，而一般认为，《几何原本》总结了古代埃及和希腊的散落的数学知识，从少数几个公设和公理出发，用逻辑推演出大量有意义的结果，是演绎推理体系的集大成之作。</p>
+<p>《几何原本》全书一共13卷，包含465个命题。第一卷开头给出了23个几何对象和关系的定义<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。比如：</p>
+<ol>
+<li>点是没有部分的东西。</li>
+<li>线只有长度而没有宽度。</li>
+<li>一线的两端是点。</li>
+</ol>
+<p>等等。所有的定义内容可参见<a href="https://zhuanlan.zhihu.com/p/75638369" rel="external" target="_blank">这篇文章</a>。</p>
+<p>给出了定义之后，《几何原本》又给出了五条公设和五个公理。它们被认为是不证自明的道理<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>。</p>
+<p>五条公设（postulate）：</p>
+<ol>
+<li>从任意一点到任意另一点可以画一条直线。</li>
+<li>一条有限直线（线段）可以向两端无限延长。</li>
+<li>以任意点为圆心、任意距离为半径可以画一个圆。</li>
+<li>所有直角都相等。</li>
+<li>平行公设：同一平面内，一条直线与两条直线相交，若同侧内角之和小于两直角，则这两条直线无限延长后会相交于该侧某一点。</li>
+</ol>
+<p>五个公理（axiom）：</p>
+<ol>
+<li>等于同量的量彼此相等。</li>
+<li>等量加等量，其和相等。</li>
+<li>等量减等量，其差相等。</li>
+<li>彼此重合的图形，彼此相等。</li>
+<li>整体大于部分。</li>
+</ol>
+<p>可以看到，公设是具体直观上的设定，而公理是更基本的“道理”。如果说公设是平面几何的基础，那么公理更多是思考的基础。从这一点就可以看出，《几何原本》绝不只是关于“平面几何”这件事。实际上，除了第一卷主要探讨三角形的基本性质，最终证明勾股定理，越到后面，《几何原本》的内容越偏向讨论代数关系。大量的定理是借助几何构型探讨代数关系。比如“著名”的定理2.5，就是借长方形和正方形的面积关系，证明平方和差的恒等式：</p>
+$$ ab + \frac{(a - b)^2}{2} = \frac{(a + b)^2}{2}. $$<p>
+更不用说后面借助圆的内外接正多边形来讨论圆周率和无理数（不可公度量）了。</p>
+<p>因此，《几何原本》的主要目标不是深入讨论几何形状的性质，而是借助几何形状，来讨论代数关系，乃至数本身。这也是为什么中文将其翻译为“几何”（也就是“多少”）。现代中文数学用“几何”来描述形体的性质，反而是弄错了古人“几何”的本意。</p>
+<p>回到初中平面几何的学习。初中的学生直接学习以上的公理化体系，合理吗？不合理。凡是以让学生“读经典”的名义去直接读《几何原本》的，要么是一知半解，要么是不负责任。那么，初中的学生应该怎么学习平面几何，与《几何原本》又有什么联系呢？且听下回分解。</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="http://www.mathsgreat.com/SC/elementsII/elementsII_01.html" rel="external" target="_blank">《几何原本》中文译本：第一卷</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Axiomatic Geometry, John M. Lee, Chap. 1, <a href="https://sites.math.washington.edu/~lee/Books/AG/amstext-21-prev.pdf" rel="external" target="_blank">Euclid</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> 2023年1月25日
+<div class="R-taxonomy taxonomy-categories cstyle" title="类别" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/categories/%E6%95%99%E8%82%B2%E6%96%B9%E6%B3%95%E8%AE%BA/index.html">教育方法论</a></li>
+    <li><a class="term-link" href="/categories/%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95%E5%AD%A6%E4%B9%A0/index.html">平面几何学习</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/index.html">
+            <div class="logo-title">自学新世界</div>
+          </a>
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="搜索 (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">搜索</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="搜索...">
+            <button class="search-clear" type="button" data-search-clear="" title="清除搜索"><i class="fas fa-times" title="清除搜索"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="parent " data-nav-id="/maths/index.html"><input type="checkbox" id="R-section-f053dd169055bad889c66820137b962e" aria-controls="R-subsections-f053dd169055bad889c66820137b962e" checked><label for="R-section-f053dd169055bad889c66820137b962e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">子菜单悟数学</span></label><a class="padding" href="/maths/index.html">悟数学</a><ul id="R-subsections-f053dd169055bad889c66820137b962e" class="collapsible-menu">
+            <li class="" data-nav-id="/maths/euclid-4/index.html"><a class="padding" href="/maths/euclid-4/index.html">平面几何教学探索之四：要什么公理？</a></li>
+            <li class="" data-nav-id="/maths/euclid-3/index.html"><a class="padding" href="/maths/euclid-3/index.html">平面几何教学探索之三：平行公设？</a></li>
+            <li class="" data-nav-id="/maths/algebra-1/index.html"><a class="padding" href="/maths/algebra-1/index.html">代数和运算法则</a></li>
+            <li class="active " data-nav-id="/maths/euclid-2/index.html"><a class="padding" href="/maths/euclid-2/index.html">平面几何教学探索之二：公理是什么？</a></li>
+            <li class="" data-nav-id="/maths/euclid-1/index.html"><a class="padding" href="/maths/euclid-1/index.html">平面几何教学探索之一：到底要学什么？</a></li>
+            <li class="" data-nav-id="/maths/prologue/index.html"><a class="padding" href="/maths/prologue/index.html">写在最初</a></li></ul></li>
+            <li class="" data-nav-id="/wen/index.html"><a class="padding" href="/wen/index.html">真语文</a></li>
+            <li class="" data-nav-id="/log/index.html"><a class="padding" href="/log/index.html">元思维</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">语言</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-zh" value="#R-select-language-zh" data-url="/maths/euclid-2/index.html" lang="zh-CN" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">主题</label>
+                    <select id="R-select-variant" onchange="window.relearn.changeVariant( this.value );">
+                      <option id="R-select-variant-tima-dark" value="tima-dark" selected>Tima Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.relearn.markVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">清理历史记录</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+            <p>使用<a href="https://gohugo.io/">Hugo</a>制作<a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1740942890" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1740942890" defer></script>
+    <script>
+      window.MathJax = Object.assign( window.MathJax || {}, {
+        tex: {
+          inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+          displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+        },
+        options: {
+          enableMenu: false 
+        }
+      }, JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1740942890"></script>
+    <script src="/js/theme.js?1740942890" defer></script>
+  </body>
+</html>
