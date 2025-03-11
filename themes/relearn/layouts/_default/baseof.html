@@ -68,9 +68,9 @@
       <main id="R-body-inner" class="highlightable{{ with or .Type "default" }} {{ . }}{{ end }}" tabindex="-1">
         <div class="flex-block-wrapper">
 {{- block "body" . }}{{ end }}
+{{- partial "custom-comments.html" . }}
         </div>
       </main>
-{{- partial "custom-comments.html" . }}
     </div>
 {{- block "menu" . }}{{ end }}
 {{- $assetBusting := partialCached "assetbusting.gotmpl" . }}

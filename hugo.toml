@@ -9,6 +9,13 @@ defaultContentLanguage = 'zh'
   math = true
   collapsibleMenu = true
 
+[params.utteranc]
+  enable = true
+  repo = "abdulle-sabaf/erudeon"
+  issueTerm = "pathname"
+  theme = "github-dark"
+
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
